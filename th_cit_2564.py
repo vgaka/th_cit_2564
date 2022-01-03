@@ -42,7 +42,7 @@ def cal_cit_2564(netprofit)-> float:
         return cittax(taxdf.loc[tax.index[0]-1,'accumtax'], netprofit - int(tax['Lower']), tax['Taxrate'].max())
 
 def main():
-    netprofit = 299900.0
+    netprofit = 2900000.0
     while netprofit <= 15000000.0:
         # print(netprofit)
         taxcal =  cal_cit_2564(netprofit)
